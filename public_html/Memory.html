@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    
+    
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    
+    <body>
+        
+        <header id="titre">Memory</header>
+        <form>
+            <input type="radio" id="facile"    value="facile">
+            
+            
+        </form>
+        <table>
+            
+            <thead> 
+            </thead>   
+            
+            <tbody>
+                
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            </tbody>
+           
+            <tfoot>
+            </tfoot>
+            
+        </table>
+        
+        <button>Démarrer</button>
+        
+        
+        
+    <footer>
+         
+    <a>Copyright M2I 2018</a>
+        
+    </footer>   
+        <script>
+ var nombreCases = prompt("Choississez un nombre de cases");
+ var difficulte = prompt("Choississez une difficulte");
+ 
+ var TableauCases = tableau(nombreCases,difficulte);
+    
+
+function tableau(c,d){
+    
+ console.log(c);
+ console.log(d);
+ 
+   //Si 
+   if(c === "16" && d === "facile"){
+       
+        return "tableau de 16 cases";
+   }
+   
+   if(c === "20" && d === "moyen"){
+       
+       return "tableau de 20 cases";
+   }
+   if(c === "24" && d === "difficile"){
+       
+       return "tableau de 24 cases";
+   }
+   
+   return "erreur";
+   
+   
+}
+        </script>
+    </body>
+    
+    
+</html>

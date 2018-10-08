@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <h1 id="titre">Exercice sur le DOM</h1>
+        <form>
+            <label class="titre">Pseudo</label>
+            <input id="pseudo" name="name">
+            <br>
+            <label class="titre">M-d-p</label>
+            <input type="password" id="mdp" name="mdp">
+            <br>
+            <input type="button" value="Connexion" onclick="clicpseudo();">    
+        </form>
+       
+        <div id="message">
+            
+            
+        </div>
+        
+        <script>   
+
+//var longueurMdp=4;
+////var pseudo = prompt("Veuillez saisir un pseudo");
+////var passe = prompt("Veuillez saisir un mot de passe");
+//
+//if(longueurPseudo > 3){
+//    console.log("Pseudo trop long");
+//}else if(longueurMdp <= 3){
+//    console.log("Mdp valide");
+//}else if(longueurPseudo <= 3){
+//    console.log("pseudo valide");
+//}else if(longueurMdp > 3){
+//    console.log("Mdp trop long");
+//}else{
+//    console.log("Erreur");
+//}
+
+ function clicpseudo(){
+    var pseudoBis = document.getElementById("pseudo").value;
+    var mdpBis= document.getElementById("mdp").value;
+    
+    var longueurPseudo = pseudoBis.length;
+    var longueurmdp= mdpBis.length;
+    
+    if(longueurPseudo >= 3 && longueurmdp >= 3 ){
+        
+        var emplacementMessage = document.getElementsByTagName("form");
+        emplacementMessage[0].innerHTML = "<h1>Bienvenue " + pseudoBis +"</h1>";      
+        
+    }else {
+        
+        var message = document.getElementById("message");
+        message.innerHTML = "erreur";
+    }
+   
+}
+   
+ 
+
+        
+        </script>
+        
+        
+        
+ 
+ 
+        
+    </body>
+</html>

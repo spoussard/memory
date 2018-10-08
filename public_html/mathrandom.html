@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <script>
+
+//            var i = Math.random();
+//            i = i * 100;
+//            
+//            alert(i);
+//            do {
+//                console.log(j);
+//            } while (nombre <= 100);
+//            
+//            if (nombre < j) {
+//                console.log("Votre nombre est inférieur au nombre attendu");
+//            } else if (nombre > j) {
+//                console.log("Votre nombre est supérieur au nombre attendu");
+//            } else if (nombre == j) {
+//                console.log("Bravo, vous avez trouvé le nombre exact");
+//            }
+
+// ordi trouve un nombre aléatoire entre  et 100
+var nombreSecret = Math.random()*100;
+nombreSecret = Math.floor(nombreSecret);
+// Boucle de jeu
+do{
+    //saisie nombre
+    var nbrechoisi= prompt("entrez un nombre");
+    //compare ce  nombre avec nbealeat et affiche si > ou <
+    if(nbrechoisi<nombreSecret){
+        alert("Nombre à trouver >");
+    } else if (nbrechoisi>nombreSecret){
+        alert("Nombre à trouver <");
+    }
+}while(nbrechoisi!==nombreSecret);
+alert("Bravo");
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

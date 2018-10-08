@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        
+        
+        
+        <script>
+            
+//    function additionne(a,b){
+//        var res = a + b;
+//        return res;
+//    }
+            
+//    function exposant(n,p){
+//        //multiplier n pfois
+//      var res=1;
+//      for(var i=0;i<p;i++){
+//          res=res*n;
+//                  
+//      }
+//        return res;
+//    }
+//          
+               
+    /**
+     * Retourne le nom du sort en fonction des cartes passées en param.
+     * @param {type} c1
+     * @param {type} c2
+     * @returns {String} le nom du sort determiné
+     */
+    function sort(carte1,carte2){
+        
+        if(carte1=='Mandragore' && carte2=='licorne'){
+            return 'Invisibilité';
+        }
+        else if(carte1=='chauve-souris' && carte2=='bave-crapaud'){
+            return'sommeil profond';
+           
+        }else{
+            return 'Erreur';
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ var carte1 = prompt("Choississez une premier carte");
+ var carte2 = prompt("Choississez une seconde carte");
+ 
+ var monSort = sort(carte1,carte2);
+    console.log(monSort);
+
+function sort(c1, c2){
+    
+ console.log(c1);
+ console.log(c2);
+ 
+   //Si une de mes carte est mandragore ET l'autre licorne alors je renvoi le sort correspondant 
+   if(c1 === "Mandragore" && c2 === "licorne"){
+       
+        return "invisibilite";
+   }
+   
+   if(c1 === "chauve-souris" && c2 === "bave-crapaud"){
+       
+       return "sommeil-profond";
+   }
+   
+   return "erreur";
+   
+   
+}
+    
+    
+//  function sort(carte1,carte2){
+//     
+//  var i = prompt ("Choisissez une carte");
+//  
+//            if (i==="Mandragore") {
+//    }
+//  return invisibilité;
+//  
+//  
+//        else if(i==="chauve-souris"){
+//  }
+//  return "sommeil profond";
+//  
+//  else if()
+//  
+//  
+//  
+//  
+//  
+//}
+            
+            
+            
+            function factorielle(n){
+                var res=1;
+                
+                for (var i=0;i<n;i++){
+                    res=res*(n-i);
+                }
+                return res;
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </script>
+    </body>
+</html>
